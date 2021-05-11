@@ -1,0 +1,28 @@
+name: Deploy to Github Pages
+
+on:
+  push:
+    branches: [ trunk ]
+
+jobs:
+  publish-gh-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Read .nvmrc
+        id: node_version
+        run: echo ::set-output name=NODE_VERSION::$(cat .nvmrc)
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ steps.node_version.outputs.NODE_VERSION }}
+      - run: npm i -g yarn
+      - run: yarn install --frozen-lockfile
+      - run: git config user.name "Github Actions" && git config user.email "githubactions@adtya.xyz"
+      - run: yarn test
+      - run: yarn build
+      - run: echo adtya.xyz > build/CNAME
+      - run: yarn deploy
+    env:
+      GH_TOKEN: ${{secrets.SECRET_GITHUB_TOKEN}}
