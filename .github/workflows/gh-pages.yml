@@ -32,4 +32,13 @@ jobs:
       - name: Setup CNAME
         run: echo adtya.xyz > build/CNAME
       - name: Deploy
-        run: yarn deploy
+        run: |
+          cd build/
+          git init
+          git branch -m gh-pages
+          git config user.name "Github Actions"
+          git config user.email "gh-actions@adtya.xyz"
+          git remote add gh-action "https://${{ secrets.SECRET_GITHUB_TOKEN }}@github.com/adtya/adtya.github.io.git"
+          git add .
+          git commit -m "Published ${date}"
+          git push -f -u gh-action gh-pages
