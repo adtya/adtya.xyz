@@ -8,7 +8,7 @@ jobs:
   publish-gh-pages:
     runs-on: ubuntu-latest
     env:
-      GH_TOKEN: ${{ secrets.SECRET_GITHUB_TOKEN }}
+      GH_TOKEN: ${{ secrets.PAGES_DEPLOY_TOKEN }}
     steps:
       - name: Checkout `trunk`
         uses: actions/checkout@v2
@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Set git user
-        run: git config user.name "Github Actions" && git config user.email "githubactions@adtya.xyz"
+        run: git config user.name "Github Actions" && git config user.email "gh.actions@adtya.xyz"
       - name: Run tests
         run: yarn test
       - name: Build
@@ -32,13 +32,4 @@ jobs:
       - name: Setup CNAME
         run: echo adtya.xyz > build/CNAME
       - name: Deploy
-        run: |
-          cd build/
-          git init
-          git branch -m gh-pages
-          git config user.name "Github Actions"
-          git config user.email "gh-actions@adtya.xyz"
-          git remote add gh-action "https://${{ secrets.SECRET_GITHUB_TOKEN }}@github.com/adtya/adtya.github.io.git"
-          git add .
-          git commit -m "Published ${date}"
-          git push -f -u gh-action gh-pages
+        run: yarn deploy
