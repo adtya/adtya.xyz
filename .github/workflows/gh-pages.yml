@@ -24,5 +24,3 @@ jobs:
       - run: yarn build
       - run: echo adtya.xyz > build/CNAME
       - run: yarn deploy
-    env:
-      GH_TOKEN: ${{secrets.SECRET_GITHUB_TOKEN}}
