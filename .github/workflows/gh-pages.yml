@@ -8,7 +8,7 @@ jobs:
   publish-gh-pages:
     runs-on: ubuntu-latest
     env:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_TOKEN: ${{ secrets.SECRET_GITHUB_TOKEN }}
     steps:
       - name: Checkout `trunk`
         uses: actions/checkout@v2
