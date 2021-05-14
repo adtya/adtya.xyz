@@ -8,9 +8,9 @@ jobs:
   publish-gh-pages:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout `trunk`
         uses: actions/checkout@v2
-      - name: Read .nvmrc
+      - name: Read Node version from .nvmrc
         id: node_version
         run: echo ::set-output name=NODE_VERSION::$(cat .nvmrc)
       - name: Setup Node
