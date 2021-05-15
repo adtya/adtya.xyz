@@ -8,7 +8,7 @@ jobs:
   publish-gh-pages:
     runs-on: ubuntu-latest
     env:
-      GH_TOKEN: ${{ secrets.PAGES_DEPLOY_TOKEN }}
+      REMOTE: https://${{ secrets.PAGES_DEPLOY_TOKEN }}@github.com/adtya/adtya.github.io.git
     steps:
       - name: Checkout `trunk`
         uses: actions/checkout@v2
