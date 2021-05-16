@@ -9898,6 +9898,11 @@ simple-swizzle@^0.2.2:
   dependencies:
     is-arrayish "^0.3.1"
 
+simpledotcss@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/simpledotcss/-/simpledotcss-1.0.0.tgz#b5ac8fcd73d111938def9c0f43f1839d6eae96be"
+  integrity sha512-inneK6Wqh5rUdASxJMAKJORbDeKRySZPlY6H1Jqc6o6t5QbXhd5UZUi5snkKnB0ror0H72in0zlNeeA4Vw+Fiw==
+
 sisteransi@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-1.0.5.tgz#134d681297756437cc05ca01370d3a7a571075ed"
