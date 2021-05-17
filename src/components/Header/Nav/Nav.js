@@ -7,6 +7,7 @@ function Nav() {
     return (
         <nav>
             <NavLink exact activeClassName="this" to="/">Home</NavLink>
+            <NavLink exact activeClassName="this" to="/about">About</NavLink>
         </nav>
     );
 }

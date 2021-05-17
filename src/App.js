@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home";
 import NoMatch from "./components/NoMatch/NoMatch";
 import Footer from "./components/Footer";
+import About from "./components/About";
 
 function App() {
     return (
@@ -14,6 +15,9 @@ function App() {
                 <Switch>
                     <Route exact path="/">
                         <Home/>
+                    </Route>
+                    <Route exact path="/about">
+                        <About/>
                     </Route>
                     <Route path="*">
                         <NoMatch/>
