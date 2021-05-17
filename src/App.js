@@ -7,9 +7,10 @@ import NoMatch from "./components/NoMatch/NoMatch";
 import Footer from "./components/Footer";
 
 function App() {
-    return (<div>
-            <Header/>
+    return (
+        <div>
             <Router>
+                <Header/>
                 <Switch>
                     <Route exact path="/">
                         <Home/>
