@@ -1,0 +1,22 @@
+[
+  {
+    "title": "lorem ipsum 1",
+    "tags": [
+      "tag1",
+      "tag2",
+      "tag3"
+    ],
+    "date": "Some date",
+    "content": "some content blah blah blah"
+  },
+  {
+    "title": "lorem ipsum 2",
+    "tags": [
+      "tag1",
+      "tag2",
+      "tag3"
+    ],
+    "date": "Some date",
+    "content": "some content blah blah blah"
+  }
+]

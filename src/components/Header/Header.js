@@ -2,7 +2,7 @@ import React from "react";
 
 import Nav from "./Nav/Nav";
 import './Header.css'
-import Logo from './logo512.png'
+import Logo from './logo512.png';
 
 function Header() {
     return (

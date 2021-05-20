@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Header from "./components/Header/Header";
 import Home from "./components/Home";
 import NoMatch from "./components/NoMatch/NoMatch";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 import About from "./components/About";
 
 function App() {
@@ -13,18 +13,21 @@ function App() {
             <Router>
                 <Header/>
                 <Switch>
-                    <Route exact path="/">
+                    <Route exact path={"/"}>
                         <Home/>
                     </Route>
-                    <Route exact path="/about">
+                    <Route exact path={"/about"}>
                         <About/>
                     </Route>
-                    <Route path="/*">
+                    <Route exact path={"/gpg"}>
+
+                    </Route>
+                    <Route path={"/*"}>
                         <NoMatch/>
                     </Route>
                 </Switch>
+                <Footer/>
             </Router>
-            <Footer/>
         </div>
     );
 }
