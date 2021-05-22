@@ -1,6 +1,6 @@
 import React from "react";
 
-import Icons from "../Icons";
+import {Email, Github, Instagram, Mastodon, OpenPGP} from "../Icons";
 import './Footer.css'
 
 function Footer() {
@@ -8,23 +8,23 @@ function Footer() {
         <footer>
             <div>
                 <a className={"socialIcon"} href={"mailto:hi@adtya.xyz"}>
-                    {Icons.email}
+                    {Email}
                 </a>
                 <a className={"socialIcon"}
                    href={"https://keys.openpgp.org/vks/v1/by-fingerprint/95EA0E6BF507E8EA346AC8740C7F35F4F821290F"}>
-                    {Icons.gpg}
+                    {OpenPGP}
                 </a>
                 <a className={"socialIcon"} href={"https://fosstodon.org/@adtya"} target={"_blank"} rel={"noreferrer"}>
-                    {Icons.mastodon}
+                    {Mastodon}
                 </a>
                 <a className={"socialIcon"} href={"https://aana.site/@adtya"} target={"_blank"} rel={"noreferrer"}>
-                    {Icons.mastodon}
+                    {Mastodon}
                 </a>
                 <a className={"socialIcon"} href={"https://pixelfed.social/adtya"} target={"_blank"} rel={"noreferrer"}>
-                    {Icons.instagram}
+                    {Instagram}
                 </a>
                 <a className={"socialIcon"} href={"https://github.com/adtya"} target={"_blank"} rel={"noreferrer"}>
-                    {Icons.github}
+                    {Github}
                 </a>
             </div>
             <p>Made with <a href="https://simplecss.org/" target="_blank"
