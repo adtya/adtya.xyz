@@ -11,7 +11,7 @@ function Footer() {
                     {Icons.email}
                 </a>
                 <a className={"socialIcon"}
-                   href={"https://keys.openpgp.org/vks/v1/by-fingerprint/6907B695BEC5DE86D5AB3E40D6AC3438C1C739A9"}>
+                   href={"https://keys.openpgp.org/vks/v1/by-fingerprint/95EA0E6BF507E8EA346AC8740C7F35F4F821290F"}>
                     {Icons.gpg}
                 </a>
                 <a className={"socialIcon"} href={"https://fosstodon.org/@adtya"} target={"_blank"} rel={"noreferrer"}>
