@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import NoMatch from "./components/NoMatch/NoMatch";
 import Footer from "./components/Footer/Footer";
 import About from "./components/About";
+import Contact from "./Contact";
 
 function App() {
     return (
@@ -19,8 +20,8 @@ function App() {
                     <Route exact path={"/about"}>
                         <About/>
                     </Route>
-                    <Route exact path={"/gpg"}>
-
+                    <Route exact path={"/contact"}>
+                        <Contact/>
                     </Route>
                     <Route path={"/*"}>
                         <NoMatch/>
