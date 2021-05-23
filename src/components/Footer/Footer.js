@@ -7,7 +7,7 @@ function Footer() {
     return (
         <footer>
             <div>
-                <a className={"socialIcon"} href={"mailto:hi@adtya.xyz"}>
+                <a className={"socialIcon"} href={"mailto:comesayhi@adtya.xyz"}>
                     {Email}
                 </a>
                 <a className={"socialIcon"}
