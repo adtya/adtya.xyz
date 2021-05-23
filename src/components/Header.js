@@ -1,8 +1,8 @@
 import React from "react";
 
-import Nav from "./Nav/Nav";
-import './Header.css'
-import Logo from './logo512.png';
+import Nav from "./Nav";
+import './styles/Header.css'
+import Logo from './assets/logo512.png';
 
 function Header() {
     return (

@@ -1,12 +1,12 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
+import Header from "./components/Header";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import NoMatch from "./components/NoMatch/NoMatch";
+import NoMatch from "./components/NoMatch";
+import Footer from "./components/Footer";
 
 function App() {
     return (

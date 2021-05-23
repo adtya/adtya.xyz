@@ -1,7 +1,7 @@
 import React from "react";
 
-import {Email, Github, Instagram, Mastodon, OpenPGP} from "../Icons";
-import './Footer.css'
+import {Email, Github, Instagram, Mastodon, OpenPGP} from "./assets/Icons";
+import './styles/Footer.css'
 
 function Footer() {
     return (

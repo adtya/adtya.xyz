@@ -1,6 +1,6 @@
 import React from "react";
 
-import SadDoggo from './sad-doggo.png'
+import SadDoggo from './assets/sad-doggo.png'
 
 function NoMatch() {
     return (
