@@ -7,7 +7,7 @@ import Contact from "./components/Contact";
 import Home from "./components/Home";
 import NoMatch from "./components/NoMatch/NoMatch";
 import Footer from "./components/Footer/Footer";
-import Post from "./components/Post";
+import Post from "./components/Post/Post";
 
 class App extends React.Component {
     render() {
