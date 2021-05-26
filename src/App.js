@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import NoMatch from "./components/NoMatch/NoMatch";
 import Footer from "./components/Footer/Footer";
 import Post from "./components/Post/Post";
+import Elsewhere from "./components/Elsewhere";
 
 class App extends React.Component {
     render() {
@@ -24,6 +25,9 @@ class App extends React.Component {
                         </Route>
                         <Route exact path={"/contact"}>
                             <Contact/>
+                        </Route>
+                        <Route exact path={"/elsewhere"}>
+                            <Elsewhere/>
                         </Route>
                         <Route path={"/posts/:postId"} component={Post}/>
                         <Route path={"/*"}>
