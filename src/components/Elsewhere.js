@@ -19,8 +19,8 @@ class Elsewhere extends React.Component {
                             Knitlabs
                         </a>
                         <small>
-                            , a place to put random pieces of code that we make, most, like all side projects born
-                            one evening and die the next morning.
+                            , a place to put random pieces of code, most, like all side projects born one evening and
+                            die the next morning.
                         </small>
                     </li>
                 </ul>
