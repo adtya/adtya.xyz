@@ -5,7 +5,7 @@ class Contact extends React.Component {
         return (
             <main>
                 <h1>Contact Me</h1>
-                <p>You can get in touch with me over <a href={"mailto:comesayhi@adtya.xyz"}>email</a> or on Mastodon
+                <p>You can get in touch with me over <a href={"mailto:sayhi@adtya.xyz"}>email</a> or on Mastodon
                     at <a
                         href={"https://fosstodon.org/@adtya"}>Fosstodon</a> or <a
                         href={"https://aana.site/@adtya"}>ആന.സൈറ്റ്</a>.

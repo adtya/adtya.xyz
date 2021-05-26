@@ -8,7 +8,7 @@ class Footer extends React.Component {
         return (
             <footer>
                 <div>
-                    <a className={styles.socialIcon} href={"mailto:comesayhi@adtya.xyz"}>
+                    <a className={styles.socialIcon} href={"mailto:sayhi@adtya.xyz"}>
                         {Email}
                     </a>
                     <a className={styles.socialIcon}
