@@ -16,8 +16,8 @@ class About extends React.Component {
                     and learning about new pieces of tech that cater a transparent and private internet for everyone.
                     <br/>
                     <br/>
-                    In my professional life, I'm a Consultant at <a href={"https://thoughtworks.com"} target={"_blank"}
-                                                                    rel={"noreferrer"}>ThoughtWorks, Inc.</a> where I
+                    In my professional life, I'm a Developer at <a href={"https://thoughtworks.com"} target={"_blank"}
+                                                                   rel={"noreferrer"}>ThoughtWorks, Inc.</a>, where I
                     work
                     with various tools, technologies, languages and frameworks across the board in a pursuit to create
                     extraordinary software solutions.
