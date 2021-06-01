@@ -14,7 +14,7 @@ class PostSummary extends React.Component {
     render() {
         return (
             <div>
-                <Link to={`/posts/${this.state.post.data.title}`.replace(/\s/g, '')}>
+                <Link to={`/posts/${this.state.post.data.title.replace(/[^a-zA-Z0-9]/, '-')}`}>
                     <div>
                         <h3 className={styles.postTitle}>{this.state.post.data.title}</h3>
                         <span className={styles.date}>{this.state.post.data.date}</span>

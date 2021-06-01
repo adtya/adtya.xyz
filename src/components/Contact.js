@@ -1,6 +1,10 @@
 import React from 'react';
 
 class Contact extends React.Component {
+    componentDidMount() {
+        document.title = "Contact Me | adtya.xyz";
+    }
+
     render() {
         return (
             <main>

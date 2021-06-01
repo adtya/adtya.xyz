@@ -9,26 +9,27 @@ class Post extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            posts: fetchPosts(),
-            postId: props.match.params.postId
+            post: fetchPosts().filter(post => post.data.title.replace(/[^a-zA-Z0-9]/, '-') === props.match.params.postId)[0],
         }
     }
 
+    componentDidMount() {
+        if (this.state.post)
+            document.title = `${this.state.post.data.title} | adtya.xyz`;
+    }
+
     render() {
-        const post = this.state.posts.filter(post => post.data.title.replace(/\s/g, '') === this.state.postId)[0];
-        return post === undefined
-            ? (
-                <NoMatch/>
-            )
-            : (
+        if (this.state.post === undefined)
+            return (<NoMatch/>)
+        else {
+            return (
                 <main>
-                    <h2 className={styles.postTitle}>{post.data.title}</h2>
-                    <span className={styles.date}>{post.data.date}</span>
-                    <ReactMarkdown>{post.content}</ReactMarkdown>
+                    <h1 className={styles.postTitle}>{this.state.post.data.title}</h1>
+                    <span className={styles.date}>{this.state.post.data.date}</span>
+                    <ReactMarkdown>{this.state.post.content}</ReactMarkdown>
                 </main>
             )
-
-
+        }
     }
 }
 

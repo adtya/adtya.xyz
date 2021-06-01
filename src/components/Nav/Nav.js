@@ -6,10 +6,10 @@ import styles from './nav.module.css';
 class Nav extends React.Component {
     render() {
         return (
-            <nav>
+            <nav style={{align: 'center'}}>
                 <NavLink exact activeClassName={styles.this} to="/">Home</NavLink>
-                <NavLink exact activeClassName={styles.this} to="/about">About Me</NavLink>
-                <NavLink exact activeClassName={styles.this} to="/contact">Contact Me</NavLink>
+                <NavLink exact activeClassName={styles.this} to="/about">About</NavLink>
+                <NavLink exact activeClassName={styles.this} to="/contact">Contact</NavLink>
                 <NavLink exact activeClassName={styles.this} to="/elsewhere">Elsewhere</NavLink>
             </nav>
         );

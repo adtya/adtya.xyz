@@ -1,7 +1,12 @@
 import React from 'react';
 
 class About extends React.Component {
+    componentDidMount() {
+        document.title = "About Me | adtya.xyz";
+    }
+
     render() {
+
         return (
             <main>
                 <h2>About Me</h2>

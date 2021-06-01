@@ -1,6 +1,10 @@
 import React from "react";
 
 class Elsewhere extends React.Component {
+    componentDidMount() {
+        document.title = "Elsewhere | adtya.xyz";
+    }
+
     render() {
         return (
             <main>
