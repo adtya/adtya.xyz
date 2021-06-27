@@ -15,9 +15,8 @@ class Elsewhere extends React.Component {
                             Knitlabs
                         </a>
                         <small>
-                            , started as a <a href={"https://github.com/knitlabs"} target={"_blank"} rel={"noreferrer"}>
-                            github organization
-                        </a>, where me and some peers come together and work on random stuff in our free time.
+                            , an entity born out of a need to showcase our ideas and as a playground to test out these
+                            ideas.
                         </small>
                     </li>
                     <li>

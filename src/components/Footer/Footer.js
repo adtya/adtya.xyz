@@ -29,10 +29,12 @@ class Footer extends React.Component {
                     </a>
                 </div>
                 <p>Made with <a href="https://simplecss.org/" target="_blank"
-                                rel="noreferrer">Simple.css</a> and <a href="https://draculatheme.com/"
-                                                                       target="_blank"
+                                rel="noreferrer">Simple.css</a> and <a href="https://draculatheme.com/" target="_blank"
                                                                        rel="noreferrer">Dracula</a><small>(for dark
                     mode)</small>
+                </p>
+                <p>Hosted on a <a href="https://raspberrypi.org/" target="_blank" rel="noreferrer">Raspberry Pi</a> with
+                    the help of <a href="https://github.com/fatedier/frp" target="_blank" rel="noreferrer">frp</a>.
                 </p>
             </footer>
         );
