@@ -1,0 +1,14 @@
+version: '3.0'
+networks:
+  default:
+    external: false
+
+services:
+  web:
+    build: .
+    image: ghcr.io/adtya/adtya.xyz:trunk
+    restart: always
+    networks:
+      - default
+    ports:
+      - "3000:80"
