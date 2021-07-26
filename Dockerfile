@@ -12,3 +12,5 @@ COPY --from=build /src/build /usr/share/nginx/html
 EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
+
+LABEL org.opencontainers.image.source = "https://github.com/adtya/adtya.xyz"
