@@ -22,7 +22,7 @@ class Home extends React.Component {
                     <br/>
                     <br/>
                     In my professional life, I'm a Developer at <a href={"https://thoughtworks.com"} target={"_blank"}
-                                                                   rel={"noreferrer"}>ThoughtWorks</a>, where I
+                                                                   rel={"noreferrer"}>Thoughtworks</a>, where I
                     work
                     with various tools, technologies, languages and frameworks across the board in a pursuit to create
                     extraordinary software solutions.

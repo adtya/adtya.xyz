@@ -33,9 +33,11 @@ class Footer extends React.Component {
                                                                        rel="noreferrer">Dracula</a><small>(for dark
                     mode)</small>
                 </p>
-                <p>Hosted on a <a href="https://raspberrypi.org/" target="_blank" rel="noreferrer">Raspberry Pi</a> with
-                    the help of <a href="https://github.com/fatedier/frp" target="_blank" rel="noreferrer">frp</a>.
-                </p>
+                <p><small>Hosted on a <a href="https://www.raspberrypi.org/products/raspberry-pi-4-model-b/"
+                                         target="_blank"
+                                         rel="noreferrer">Raspberry Pi</a> with the help of <a
+                    href="https://github.com/fatedier/frp" target="_blank" rel="noreferrer">frp</a>.
+                </small></p>
             </footer>
         );
     }
