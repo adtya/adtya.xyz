@@ -5,7 +5,7 @@ RUN yarn --frozen-lockfile
 COPY . ./
 RUN yarn build
 
-FROM nginx:alpine
+FROM nginx:1.21-alpine
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /src/build /usr/share/nginx/html
 
