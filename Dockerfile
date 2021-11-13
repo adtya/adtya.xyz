@@ -1,4 +1,4 @@
-FROM node:14.17-alpine as build
+FROM node:16.13-alpine as build
 WORKDIR /src
 COPY package.json yarn.lock ./
 RUN yarn --frozen-lockfile
