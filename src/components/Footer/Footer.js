@@ -1,6 +1,6 @@
 import React from "react";
 
-import {Email, GitHub, Instagram, Mastodon, OpenPGP} from "./Icons";
+import {Email, GitHub, Instagram, Mastodon, OpenPGP, XMPP} from "./Icons";
 import styles from './footer.module.css'
 
 class Footer extends React.Component {
@@ -8,6 +8,9 @@ class Footer extends React.Component {
         return (
             <footer>
                 <div>
+                    <a className={styles.socialIcon} href={"xmpp:adtya@chat.phntm.site"}>
+                        {XMPP}
+                    </a>
                     <a className={styles.socialIcon} href={"mailto:sayhi@adtya.xyz"}>
                         {Email}
                     </a>
