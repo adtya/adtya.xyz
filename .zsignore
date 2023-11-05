@@ -1,0 +1,11 @@
+.direnv/
+.git/
+.pub/
+
+.envrc
+.gitignore
+*.nix
+flake.lock
+result
+
+update-version.sh
