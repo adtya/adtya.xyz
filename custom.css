@@ -6,3 +6,7 @@
   margin: 0 .8em 0 .8em;
   text-decoration: none;
 }
+
+footer a {
+  text-decoration: none;
+}
