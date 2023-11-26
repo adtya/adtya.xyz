@@ -23,12 +23,6 @@ buildGoModule rec {
 
   nativeBuildInputs = [ installShellFiles ];
 
-  doCheck = true;
-
-  checkPhase = ''
-    go test ./...
-  '';
-
   postInstall = ''
     installShellCompletion --cmd zs \
       --bash <($out/bin/zs completion bash) \
