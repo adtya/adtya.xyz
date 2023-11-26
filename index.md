@@ -5,3 +5,4 @@ Hello stranger! I am Adithya. I also go by ***adtya*** across the interwebs. Thi
 
 ##### Links
 - [Wiki ↗](https://wiki.adtya.xyz)
+- [Me Now ↗](/now.html)
