@@ -1,7 +1,7 @@
 { stdenvNoCC, zs }:
 stdenvNoCC.mkDerivation rec {
   name = "adtya_xyz";
-  version = "2023-11-26";
+  version = "2023-12-09";
   src = ./.;
 
   nativeBuildInputs = [ zs ];
