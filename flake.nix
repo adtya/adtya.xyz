@@ -19,17 +19,14 @@
           inherit system;
         };
       in
-      with pkgs; let
-        zs = callPackage ./zs.nix { };
-      in
       {
-        formatter = nixpkgs-fmt;
-        devShells.default = mkShell {
+        formatter = pkgs.nixpkgs-fmt;
+        devShells.default = pkgs.mkShell {
           buildInputs = [
-            zs
+            pkgs.zs
           ];
         };
-        packages.default = callPackage ./default.nix { inherit zs; };
+        packages.default = pkgs.callPackage ./default.nix { };
       }
     );
 }
