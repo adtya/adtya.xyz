@@ -24,8 +24,9 @@
       {
         formatter = pkgs.nixpkgs-fmt;
         devShells.default = pkgs.mkShell {
-          buildInputs = [
-            pkgs.zs
+          packages = with pkgs; [
+            zs
+            tailwindcss-language-server
           ];
         };
         packages = {
