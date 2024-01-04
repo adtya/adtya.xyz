@@ -18,6 +18,8 @@
         pkgs = import nixpkgs {
           inherit system;
         };
+        package = pkgs.callPackage ./default.nix { };
+        app = pkgs.writeShellScriptBin "app" "${pkgs.merecat}/bin/merecat -n -p 8080 ${package}/share/web";
       in
       {
         formatter = pkgs.nixpkgs-fmt;
@@ -26,7 +28,10 @@
             pkgs.zs
           ];
         };
-        packages.default = pkgs.callPackage ./default.nix { };
+        packages = {
+          inherit app;
+          default = package;
+        };
       }
     );
 }
