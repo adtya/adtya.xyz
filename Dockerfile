@@ -1,10 +1,19 @@
-FROM nixos/nix:latest
-WORKDIR /app
+FROM nixos/nix:latest AS builder
+WORKDIR /build
 COPY . .
 
 RUN nix \
     --extra-experimental-features "nix-command flakes" \
     build .#app
 
-CMD [ "/app/result/bin/app" ]
+RUN mkdir -p /tmp/nix-store-closure
+RUN cp -ra $(nix-store -qR result/) /tmp/nix-store-closure
+
+FROM debian:stable-slim
+WORKDIR /app
+
+COPY --from=builder /tmp/nix-store-closure /nix/store
+COPY --from=builder /build/result /app
+
+CMD [ "/app/bin/app" ]
 
