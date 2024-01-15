@@ -9,7 +9,7 @@ RUN nix \
 RUN mkdir -p /tmp/nix-store-closure
 RUN cp -ra $(nix-store -qR result/) /tmp/nix-store-closure
 
-FROM debian:stable-slim
+FROM alpine:latest
 WORKDIR /app
 
 COPY --from=builder /tmp/nix-store-closure /nix/store
