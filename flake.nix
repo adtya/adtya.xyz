@@ -19,7 +19,12 @@
           inherit system;
         };
         package = pkgs.callPackage ./default.nix { };
-        app = pkgs.writeShellScriptBin "app" "${pkgs.merecat}/bin/merecat -n -p 8080 ${package}/share/web";
+        app = pkgs.writeShellScriptBin "app" ''
+          trap 'kill "''${child_pid}"; wait "''${child_pid}";' SIGINT SIGTERM
+          ${pkgs.merecat}/bin/merecat -n -p 8080 ${package}/share/web &
+          child_pid="$!"
+          wait "''${child_pid}"
+        '';
       in
       {
         formatter = pkgs.nixpkgs-fmt;
